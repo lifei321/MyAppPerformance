@@ -3,7 +3,6 @@
     package="com.example.myperformanceapp">
 
     <application
-        android:allowBackup="true"
         android:name=".MyApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

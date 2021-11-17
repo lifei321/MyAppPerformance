@@ -4,6 +4,7 @@ package com.example.myperformanceapp;
 import android.app.Application;
 import android.os.AsyncTask;
 
+import com.caton.ANRWatchDog;
 import com.caton.MyCaton;
 
 import java.util.concurrent.ExecutorService;
@@ -18,6 +19,8 @@ public class MyApplication extends Application {
         super.onCreate();
 
         MyCaton.init();
+
+        new ANRWatchDog().startWork();
 
         initThreadPool();
     }

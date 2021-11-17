@@ -36,6 +36,7 @@ public class BlockMonitor {
         public void run() {
             //继续检测
             startMonitor();
+
             //打印出执行的耗时方法的栈消息
             StackTraceElement[] stackTrace = Looper.getMainLooper().getThread().getStackTrace();
 

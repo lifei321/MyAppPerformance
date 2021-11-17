@@ -28,6 +28,6 @@ public class MainActivity extends AppCompatActivity {
     private void gotoSleep() {
         Log.d("Caton--", "test---gotoSleep");
 
-        SystemClock.sleep(2000);
+        SystemClock.sleep(3500);
     }
 }

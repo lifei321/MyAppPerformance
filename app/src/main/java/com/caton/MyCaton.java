@@ -51,11 +51,11 @@ public class MyCaton {
                 public void println(String x) {
                     if (x.startsWith(START)) {
                         //开始计时
-                        BlockMonitor.getInstance().startMonitor();
+                        MyCatonBlockMonitor.getInstance().startMonitor();
                     }
                     if (x.startsWith(END)) {
                         //结束计时
-                        BlockMonitor.getInstance().removeMonitor();
+                        MyCatonBlockMonitor.getInstance().removeMonitor();
                     }
                 }
             });

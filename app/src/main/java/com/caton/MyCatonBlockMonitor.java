@@ -1,6 +1,5 @@
 package com.caton;
 
-import android.annotation.SuppressLint;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
@@ -10,11 +9,11 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-public class BlockMonitor {
+public class MyCatonBlockMonitor {
 
     private static final String TAG = "Caton=============";
 
-    private static BlockMonitor sInstance = new BlockMonitor();
+    private static MyCatonBlockMonitor sInstance = new MyCatonBlockMonitor();
 
     private Handler mIoHandler;
 
@@ -24,7 +23,7 @@ public class BlockMonitor {
     //存放一个msg周期的卡顿堆栈信息，防止重复打印
     private Set<String> mBlockStackTrace;
 
-    private BlockMonitor() {
+    private MyCatonBlockMonitor() {
         HandlerThread logThread = new HandlerThread("BlockMonitor");
         logThread.start();
         mIoHandler = new Handler(logThread.getLooper());
@@ -58,7 +57,7 @@ public class BlockMonitor {
         }
     };
 
-    public static BlockMonitor getInstance() {
+    public static MyCatonBlockMonitor getInstance() {
         return sInstance;
     }
 

@@ -37,8 +37,23 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.1'
 
 
     // 字节码插桩
     implementation 'org.ow2.asm:asm-all:5.2'
+
+
+    // 与chrome联调
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+
+    // 上传图片压缩
+    implementation 'top.zibin:Luban:1.1.8'
+
+
+    implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.1.0'
+    implementation 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
+
+
+
 }
